@@ -1,0 +1,60 @@
+/* Styles for Section 1 */
+.Section_1 {
+    background-color: rgb(39, 38, 38); /* Set background color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Space evenly between items */
+    padding-right: 20px; /* Add padding to the right */
+    padding-left: 40px; /* Add padding to the left */
+    align-items: center; /* Center items vertically */
+    height: 120px; /* Set height */
+    border-radius: 10px; /* Apply border radius */
+}
+
+/* Styles for Product Information */
+.Product_Information {
+    width: 400px; /* Set width */
+    color: white; /* Set text color */
+    font-size: 25px; /* Set font size */
+    padding-left: 60px; /* Add padding to the left */
+}
+
+/* Styles for Discount */
+.discount {
+    color: yellow; /* Set text color */
+    font-weight: bold; /* Set font weight */
+}
+
+/* Button styles */
+button {
+    background-color: rgb(104, 118, 179); /* Set background color */
+    height: 50px; /* Set height */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Apply border radius */
+    color: white; /* Set text color */
+    font-size: 20px; /* Set font size */
+}
+
+/* Additional button style for "Get" */
+.Get {
+    background-color: red; /* Set background color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Apply border radius */
+    font-weight: 700; /* Set font weight */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Additional button style for "Get_2" */
+.Get_2 {
+    background-color: white; /* Set background color */
+    color: rgb(43, 38, 38); /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Apply border radius */
+    font-weight: 700; /* Set font weight */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Styles for Go_discount */
+.Go_discount {
+    vertical-align: top; /* Align top */
+}

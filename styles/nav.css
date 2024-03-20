@@ -1,0 +1,24 @@
+.Section_2 nav {
+    display: flex; /* Use flexbox for easier alignment */
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #f0f0f0; /* Add a background color */
+    border-bottom: 1px solid #ccc; /* Add a border bottom */
+}
+
+.Section_2 nav img {
+    margin-right: 10px; /* Add margin to separate image from links */
+}
+
+.Section_2 nav a {
+    text-decoration: none;
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Change link color */
+    margin-left: 20px; /* Add space between items */
+    font-size: 20px; /* Increase font size */
+}
+
+.Section_2 nav a:hover {
+    color: blue; /* Change link color on hover */
+}

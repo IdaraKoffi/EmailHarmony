@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailHarmony</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EmailHarmony</h1>
+        <!-- Login form -->
+        <div id="loginForm">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="toggleRegisterForm()">Register</button>
+        </div>
+        <!-- Registration form (initially hidden) -->
+        <div id="registerForm" style="display: none;">
+            <input type="email" id="registerEmail" placeholder="Email">
+            <input type="password" id="registerPassword" placeholder="Password">
+            <button onclick="register()">Register</button>
+            <button onclick="toggleRegisterForm()">Back to Login</button>
+        </div>
+        <!-- Compose email form (initially hidden) -->
+        <div id="composeForm" style="display: none;">
+            <input type="email" id="to" placeholder="To">
+            <input type="text" id="subject" placeholder="Subject">
+            <textarea id="body" placeholder="Type your email here..."></textarea>
+            <button onclick="sendEmail()">Send</button>
+            <button onclick="toggleComposeForm()">Cancel</button>
+        </div>
+        <!-- Search form -->
+        <div id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search emails...">
+            <button onclick="searchEmails()">Search</button>
+        </div>
+        <!-- Display synchronized emails -->
+        <div id="emailList">
+            <!-- Example email items -->
+            <div class="emailItem" id="email1">
+                <div class="emailSender">John Doe</div>
+                <div class="emailSubject">Meeting Reminder</div>
+                <div class="emailDate">2022-03-15</div>
+            </div>
+            <div class="emailItem" id="email2">
+                <div class="emailSender">Jane Smith</div>
+                <div class="emailSubject">Project Update</div>
+                <div class="emailDate">2022-03-14</div>
+            </div>
+        </div>
+        <!-- Display email details -->
+        <div id="emailDetails">
+            <h2>Email Subject</h2>
+            <div class="emailSender">From: John Doe &lt;johndoe@example.com&gt;</div>
+            <div class="emailRecipient">To: Jane Smith &lt;janesmith@example.com&gt;</div>
+            <div class="emailDate">Date: 2024-03-15 10:30 AM</div>
+            <div class="emailBody">
+                I want to invite you to an event we are holding for Steve Welch, our Head of Marketing who is leaving on 12 December. The event will take place between 7 pm – 12 pm on 12 December.
+            </div>
+            <!-- Buttons for actions like reply, forward, delete, etc. -->
+            <button onclick="replyToEmail()">Reply</button>
+            <button onclick="forwardEmail()">Forward</button>
+            <button onclick="deleteEmail()">Delete</button>
+        </div>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {
+    /* Set text decoration to none */
+    text-decoration: none;
+    /* Specify font-family */
+    font-family: Roboto, Arial;
+}
+
+button {
+    /* Set cursor style to pointer */
+    cursor: pointer;
+}
